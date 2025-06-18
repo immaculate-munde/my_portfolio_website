@@ -244,7 +244,43 @@ nav a:hover {
 .hero-text .hero-buttons a:hover {
   background-color: #66ffe0;
 }
+/* Hero buttons default layout */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
 
+/* Individual buttons */
+.hero-btn {
+  padding: 0.75rem 1.25rem;
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0097a7;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}
 /* Project Cards */
 .projects-grid {
   display: grid;
