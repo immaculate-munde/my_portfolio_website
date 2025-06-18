@@ -1,3 +1,10 @@
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 // Optional: Handle form submission with a confirmation alert
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
