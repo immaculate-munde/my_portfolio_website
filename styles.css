@@ -2,6 +2,29 @@
 html {
   scroll-behavior: smooth;
 }
+/* Default to light mode */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Optional: Style the toggle button itself */
+#theme-toggle {
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background: #ccc;
+}
 
 body {
   margin: 0;
@@ -11,7 +34,20 @@ body {
   color: #f0f0f0;
   font-family: 'Segoe UI', sans-serif;
 }
+body {
+  background-color: white;
+  color: black;
+}
 
+/* DARK MODE */
+body.dark-mode {
+  background-color: #0f1115;
+  color: #f0f0f0;
+}
+body.dark-mode #section-id {
+  background-color: [dark];
+  color: [light];
+}
 /* Section background variations */
 #hero {
   background-color: #0f1115; /* Darkest */
@@ -54,6 +90,16 @@ header {
   top: 0;
   z-index: 1000;
 }
+header {
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+body.dark-mode header {
+  background-color: #0e1e1e;
+  color: #fff;
+}
+
 
 .nav-container {
   display: flex;
@@ -414,4 +460,29 @@ footer {
   color: #ccc;
   text-align: center;
   font-size: 0.9rem;
+}
+/* Light Mode (default) */
+#hero,
+#projects,
+#about,
+#experience,
+#skills,
+#education,
+#contact,
+footer {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode #hero,
+body.dark-mode #projects,
+body.dark-mode #about,
+body.dark-mode #experience,
+body.dark-mode #skills,
+body.dark-mode #education,
+body.dark-mode #contact,
+body.dark-mode footer {
+  background-color: #121212;
+  color: #f0f0f0;
 }
