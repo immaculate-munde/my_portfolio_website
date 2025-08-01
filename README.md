@@ -1,6 +1,6 @@
 # 🌐 Immaculate Munde — Portfolio Website
 
-Welcome to my personal portfolio website — a space where I showcase my projects, skills, and journey as a Front-End Developer passionate about building impactful and scalable web solutions.
+Welcome to my portfolio website — a space where I showcase my projects, skills, and journey as a Front-End Developer passionate about building impactful and scalable web solutions.
 
 🔗 **Live Site**: [munde-immaculate.netlify.app](https://munde-immaculate.netlify.app/)
 
